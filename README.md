@@ -1,4 +1,5 @@
 # cookie-stand
 Salmon Cookies Lab
 
-[GitHub](https://lindseyshepard.github.io/cookie-stand/)
+[Index page](https://lindseyshepard.github.io/cookie-stand/index)
+[Sales page](https://lindseyshepard.github.io/cookie-stand/sales)
