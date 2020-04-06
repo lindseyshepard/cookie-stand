@@ -11,7 +11,8 @@ var seattle = {
     cookieSales: [16, 20, 35, 48, 56, 77, 93, 144, 119, 84, 61, 23, 42, 57]
 
 };
-console.log('This is : ' + seattle.location)
+
+
 seattle.render = function() {
     var targetUlEl = document.getElementById('cookies');
     var newLiEl = document.createElement('li');
@@ -25,8 +26,8 @@ seattle.render = function() {
 
     targetUlEl.appendChild(newLiEl);
 };
-
 seattle.render();
+
 
 
 
@@ -58,6 +59,8 @@ tokyo.render();
 
 
 
+
+
 var dubai = {
     location: 'Dubai',
     minCust: 11,
@@ -80,6 +83,9 @@ dubai.render = function() {
     console.log(cookieText);
 };
 dubai.render();
+
+
+
 
 
 
@@ -108,6 +114,9 @@ paris.render();
 
 
 
+
+
+
 var lima = {
     location: 'Lima',
     minCust: 2,
@@ -130,14 +139,6 @@ lima.render = function() {
     console.log(cookieText);
 };
 lima.render();
-
-
-
-
-
-
-
-
 
 
 
