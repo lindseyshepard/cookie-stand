@@ -158,6 +158,9 @@ var newText = 'Welcome to DOM Manipulation!';
 
 h1Target.textContent = newText;
 
+
+
+
 for (var i = 6; i <= 19; i++) {
     var orderedListEl = document.getElementById('randomNums');
     console.log(orderedListEl);
@@ -168,8 +171,6 @@ for (var i = 6; i <= 19; i++) {
 
     orderedListEl.appendChild(newListItemEl);
 };
-
-
 
 
 ///Random Numbers by city
