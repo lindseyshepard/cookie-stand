@@ -1,8 +1,47 @@
+body {
+    background-color: rgb(245, 194, 170);
+}
+
 img {
     height: 200px;
     width: 200px;
 }
 
-section {
-    background-color: rgb(245, 194, 170);
+.citySection {
+    display: inline-block;
+    width: 15%;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-content: center;
+}
+
+header {
+    background-image: url("https://lmimirror3pvr.azureedge.net/static/media/8608/68834075-cbf7-43c5-a765-78d2d450b0f1/seaweed_960x540.jpg");
+    background-repeat: repeat-x repeat-y;
+    background-size: 400px;
+    background-color: rgb(53, 233, 209);
+}
+
+#DasFish {
+    height: 50%;
+    width: 50%;
+}
+
+div img {
+    display: flex;
+    align-content: center;
+}
+
+@media only screen and (max-width: 400px) {
+    /* For mobile phones: */
+    [id*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 100%) {
+    /* For mobile phones: */
+    [id*="col-"] {
+        width: 100%;
+    }
 }
