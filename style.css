@@ -32,7 +32,7 @@ div img {
     align-content: center;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 300px) {
     /* For mobile phones: */
     [id*="col-"] {
         width: 100%;
