@@ -164,15 +164,23 @@ for (var i = 6; i <= 19; i++) {
         var newListItemEl = document.createElement('li');
         newListItemEl.textContent = [i + ' am : ' + getRandom(seattle.minCust, seattle.maxCust) + ' cookies'];
         unOrderedListEl.appendChild(newListItemEl);
+    } else if (i > 12) {
+
+        var newListItemEl = document.createElement('li');
+        newListItemEl.textContent = [(i - 12) + ' pm : ' + getRandom(seattle.minCust, seattle.maxCust) + ' cookies'];
+        unOrderedListEl.appendChild(newListItemEl);
+
+
     } else {
+
         var newListItemEl = document.createElement('li');
         newListItemEl.textContent = [i + ' pm : ' + getRandom(seattle.minCust, seattle.maxCust) + ' cookies'];
         unOrderedListEl.appendChild(newListItemEl);
-    }
-};
-// newListItemEl.textContent = [i + 'hours : ' + getRandom(seattle.minCust, seattle.maxCust) + ' cookies'];
+    };
+    // newListItemEl.textContent = [i + 'hours : ' + getRandom(seattle.minCust, seattle.maxCust) + ' cookies'];
 
-///Random Numbers by city
+    ///Random Numbers by city
+}
 
 var seattleRandom = (seattle.minCust, seattle.maxCust);
 console.log(seattleRandom);
