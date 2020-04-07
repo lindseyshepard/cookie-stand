@@ -156,6 +156,9 @@ var h1Target = document.getElementById('pageTitle');
 var newText = 'Welcome to DOM Manipulation!';
 h1Target.textContent = newText;
 
+
+
+
 for (var i = 6; i <= 19; i++) {
     var unOrderedListEl = document.getElementById('randomNums');
     console.log(unOrderedListEl);
@@ -172,6 +175,7 @@ for (var i = 6; i <= 19; i++) {
 
 
     } else {
+
 
         var newListItemEl = document.createElement('li');
         newListItemEl.textContent = [i + ' pm : ' + getRandom(seattle.minCust, seattle.maxCust) + ' cookies'];
