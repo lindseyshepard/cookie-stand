@@ -1,7 +1,6 @@
 'use strict';
 
 
-
 var seattle = {
     location: 'Seattle',
     minCust: 23,
@@ -50,20 +49,20 @@ seattle.render = function() {
         var newListItemEl = document.createElement('li');
 
         if (i <= 11) {
-            newListItemEl.textContent = [i + 'am: ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [i + ' am: ' + this.hourlySales[i - 6] + ' cookies '];
 
         } else if (i > 12) {
             var newListItemEl = document.createElement('li');
-            newListItemEl.textContent = [(i - 12) + 'pm: ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [(i - 12) + ' pm: ' + this.hourlySales[i - 6] + ' cookies '];
 
         } else {
             var newListItemEl = document.createElement('li');
-            newListItemEl.textContent = [i + 'pm ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [i + ' pm ' + this.hourlySales[i - 6] + ' cookies '];
         }
         orderedListEl.appendChild(newListItemEl);
     }
     var totalSalesString = document.createElement('li');
-    totalSalesString.textContent = ('Total Sales : ' + this.allTotalSales + ' cookies');
+    totalSalesString.textContent = ('Total Sales : ' + this.allTotalSales + ' cookies ');
     orderedListEl.appendChild(totalSalesString);
 
 }
@@ -129,15 +128,15 @@ tokyo.render = function() {
         var newListItemEl = document.createElement('li');
 
         if (i <= 11) {
-            newListItemEl.textContent = [i + 'am: ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [i + ' am: ' + this.hourlySales[i - 6] + ' cookies'];
 
         } else if (i > 12) {
             var newListItemEl = document.createElement('li');
-            newListItemEl.textContent = [(i - 12) + 'pm: ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [(i - 12) + ' pm: ' + this.hourlySales[i - 6] + ' cookies'];
 
         } else {
             var newListItemEl = document.createElement('li');
-            newListItemEl.textContent = [i + 'pm ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [i + ' pm ' + this.hourlySales[i - 6] + ' cookies'];
         }
         orderedListEl.appendChild(newListItemEl);
     }
@@ -208,15 +207,15 @@ lima.render = function() {
         var newListItemEl = document.createElement('li');
 
         if (i <= 11) {
-            newListItemEl.textContent = [i + 'am: ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [i + ' am: ' + this.hourlySales[i - 6] + ' cookies'];
 
         } else if (i > 12) {
             var newListItemEl = document.createElement('li');
-            newListItemEl.textContent = [(i - 12) + 'pm: ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [(i - 12) + ' pm: ' + this.hourlySales[i - 6] + ' cookies'];
 
         } else {
             var newListItemEl = document.createElement('li');
-            newListItemEl.textContent = [i + 'pm ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [i + ' pm ' + this.hourlySales[i - 6] + ' cookies'];
         }
         orderedListEl.appendChild(newListItemEl);
     }
@@ -287,15 +286,15 @@ dubai.render = function() {
         var newListItemEl = document.createElement('li');
 
         if (i <= 11) {
-            newListItemEl.textContent = [i + 'am: ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [i + ' am: ' + this.hourlySales[i - 6] + ' cookies'];
 
         } else if (i > 12) {
             var newListItemEl = document.createElement('li');
-            newListItemEl.textContent = [(i - 12) + 'pm: ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [(i - 12) + ' pm: ' + this.hourlySales[i - 6] + ' cookies'];
 
         } else {
             var newListItemEl = document.createElement('li');
-            newListItemEl.textContent = [i + 'pm ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [i + ' pm ' + this.hourlySales[i - 6] + ' cookies'];
         }
         orderedListEl.appendChild(newListItemEl);
     }
@@ -366,15 +365,15 @@ paris.render = function() {
         var newListItemEl = document.createElement('li');
 
         if (i <= 11) {
-            newListItemEl.textContent = [i + 'am: ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [i + ' am: ' + this.hourlySales[i - 6] + ' cookies'];
 
         } else if (i > 12) {
             var newListItemEl = document.createElement('li');
-            newListItemEl.textContent = [(i - 12) + 'pm: ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [(i - 12) + ' pm: ' + this.hourlySales[i - 6] + ' cookies'];
 
         } else {
             var newListItemEl = document.createElement('li');
-            newListItemEl.textContent = [i + 'pm ' + this.hourlySales[i - 6] + ' cookies'];
+            newListItemEl.textContent = [i + ' pm ' + this.hourlySales[i - 6] + ' cookies'];
         }
         orderedListEl.appendChild(newListItemEl);
     }
