@@ -164,7 +164,7 @@ function totalsCities() {
 
     var newThEl = document.createElement('th');
 
-    newThEl.textContent = 'Totals:';
+    newThEl.textContent = 'Totals: ';
 
     newTrEl.appendChild(newThEl);
 
@@ -308,10 +308,10 @@ paris.totalSales();
 
 paris.renderTableRow();
 
-function removeFinalRow() {
-    totalsCities.remove();
+// function removeFinalRow() {
+//     totalsCities.remove();
 
-}
+// }
 
 
 
@@ -323,9 +323,9 @@ makeFinalRow();
 
 var storeForm = document.getElementById('chatform');
 
-storeForm.addEventListener('submit', function(event) {
+storeForm.addEventListener('submit', function(e) {
 
-    event.preventDefault();
+    e.preventDefault();
 
     var city = e.target.city.value;
 
@@ -338,7 +338,7 @@ storeForm.addEventListener('submit', function(event) {
     var x = new City(city, min, max, averages);
 
 
-    removeFinalRow();
+    // removeFinalRow();
 
 
 
@@ -348,6 +348,7 @@ storeForm.addEventListener('submit', function(event) {
     x.getRandom();
     x.totalSales();
     x.renderTableRow();
+
     makeFinalRow();
     console.log(storeForm)
 
@@ -358,7 +359,7 @@ storeForm.addEventListener('submit', function(event) {
 })
 
 
-totalsCities.removeFinalRow();
+// totalsCities.removeFinalRow();
 
 
 console.log(formArray);
