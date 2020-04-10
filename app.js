@@ -1,15 +1,14 @@
-'use strict';
+'use strict'
+
 
 
 var cities = []
 
+var formArray = []
 
 
 
-
-
-
-function City(location, minCust, maxCust, avgCookieSale, picture) {
+function City(location, minCust, maxCust, avgCookieSale, ) {
 
     // debugger
 
@@ -23,8 +22,6 @@ function City(location, minCust, maxCust, avgCookieSale, picture) {
 
     this.hourlySales = [];
 
-    this.picture = picture;
-
     this.allTotalSales = 0;
 
     cities.push(this)
@@ -33,9 +30,7 @@ function City(location, minCust, maxCust, avgCookieSale, picture) {
 
 
 
-
 var time = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', 'Daily Location Total']
-
 
 
 
@@ -51,8 +46,6 @@ console.log(copy)
 
 
 
-
-
 City.prototype.getRandom = function() {
 
     var min = Math.ceil(this.minCust);
@@ -62,7 +55,6 @@ City.prototype.getRandom = function() {
     return Math.floor(Math.random() * (max - min)) + min;
 
 }
-
 
 
 
@@ -92,7 +84,6 @@ City.prototype.renderTableRow = function() {
 
 
 
-
     var tableElToTarget = document.getElementById('sales-table');
 
     var newTrEl = document.createElement('tr');
@@ -104,7 +95,6 @@ City.prototype.renderTableRow = function() {
     newThEl.textContent = this.location;
 
     newTrEl.appendChild(newThEl);
-
 
 
 
@@ -120,7 +110,6 @@ City.prototype.renderTableRow = function() {
 
 
 
-
     var newTotalTd = document.createElement('td');
 
     newTotalTd.textContent = this.allTotalSales;
@@ -133,10 +122,7 @@ City.prototype.renderTableRow = function() {
 
 
 
-
-
 };
-
 
 
 
@@ -166,9 +152,7 @@ function clock() {
 
 
 
-
 };
-
 
 
 
@@ -212,7 +196,6 @@ function totalsCities() {
 
 
 
-
     for (i = 0; i < 14; i++) {
 
         var newThEl = document.createElement('th');
@@ -222,7 +205,6 @@ function totalsCities() {
         newTrEl.appendChild(newThEl);
 
     }
-
 
 
 
@@ -244,7 +226,6 @@ function totalsCities() {
 
 
 
-
 };
 
 clock();
@@ -253,10 +234,7 @@ clock();
 
 
 
-
-
-var seattle = new City('Seattle', 23, 65, 6.3, 'https://olsonkundig.com/wp-content/uploads/2017/11/13049_00_N504_web-2160x1549.jpg');
-
+var seattle = new City('Seattle', 23, 65, 6.3, );
 
 
 
@@ -272,9 +250,7 @@ seattle.renderTableRow();
 
 
 
-
-
-var tokyo = new City('Tokyo', 3, 24, 1.2, 'https://www.loveholidays.com/blog/wp-content/uploads/2015/08/Tokyo_addmustard_151391627.jpg');
+var tokyo = new City('Tokyo', 3, 24, 1.2, );
 
 
 
@@ -290,9 +266,7 @@ tokyo.renderTableRow();
 
 
 
-
-
-var lima = new City('Lima', 2, 16, 4.6, 'https://s-media-cache-ak0.pinimg.com/736x/42/fd/d8/42fdd8d7f523a2d1ed6cfb4913abf1b7.jpg');
+var lima = new City('Lima', 2, 16, 4.6, );
 
 
 
@@ -308,9 +282,7 @@ lima.renderTableRow();
 
 
 
-
-
-var dubai = new City('Dubai', 11, 38, 3.7, 'https://i.ytimg.com/vi/zGtz_GOA79w/maxresdefault.jpg');
+var dubai = new City('Dubai', 11, 38, 3.7, );
 
 
 
@@ -326,9 +298,7 @@ dubai.renderTableRow();
 
 
 
-
-
-var paris = new City('Paris', 20, 38, 2.3, 'https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateParis_Heroshutterstock_112137761.jpg');
+var paris = new City('Paris', 20, 38, 2.3, );
 
 
 
@@ -338,58 +308,58 @@ paris.totalSales();
 
 paris.renderTableRow();
 
-
-
-
-
-
-
-console.log(cities)
-
-totalsCities();
-
-console.log(totalsCities)
-
-
-// City.totalForAll();
-
-// Step 1 find a target
-var chatFrom = document.getElementById('chatform');
-//var salmonformthing = document.getElementById('salmonform')
-
-//step 3 attach a callback function
-function salmonForms(eventPotatoTomato) {
-    //collects the name and message and puts it in the chat list
-
-    //any time we use JS to capture a submit from a form
-    // we need to use Event.Prototype.preventDefault
-    eventPotatoTomato.preventDefault();
-
-
-    //when form is submitte it creates an event with ALL the information
-    //BELOW this - is finding the relevent information instead of that massive return we saw in the chrome console.
-
-    //entire event
-    console.log('Event: ', eventPotatoTomato);
-
-    //event's target (form)
-    console.log('Target', eventPotatoTomato.target);
-
-    //we look at the property of the target that is the name of the input we want
-    console.log('Input : ', eventPotatoTomato.target.city);
-
-    //we look at the event target input value
-    // console.log('Value : ', eventPotatoTomato.target.city.info);
-
-    console.log(eventPotatoTomato.target.city.min);
-    console.log(eventPotatoTomato.target.city.min.max);
-    console.log(eventPotatoTomato.target.city.min.max.averages);
-
-    // console.log('Message : ' + eventPotatoTomato.target.city.value);
-
+function removeFinalRow() {
+    totalsCities.remove();
 
 }
 
-//Step 2 add an EventListener
-chatFrom.addEventListener('submit', salmonForms);
-// salmonformthing.addEventListener('submit', salmonForms);
+
+
+function makeFinalRow() {
+    totalsCities();
+}
+makeFinalRow();
+
+
+var storeForm = document.getElementById('chatform');
+
+storeForm.addEventListener('submit', function(event) {
+
+    event.preventDefault();
+
+    var city = e.target.city.value;
+
+    var min = e.target.min.value;
+
+    var max = e.target.max.value;
+
+    var averages = e.target.averages.value;
+
+    var x = new City(city, min, max, averages);
+
+
+    removeFinalRow();
+
+
+
+
+    totalsCities();
+
+    x.getRandom();
+    x.totalSales();
+    x.renderTableRow();
+    makeFinalRow();
+    console.log(storeForm)
+
+
+
+    formArray.push(storeForm);
+
+})
+
+
+totalsCities.removeFinalRow();
+
+
+console.log(formArray);
+totalsCities();
