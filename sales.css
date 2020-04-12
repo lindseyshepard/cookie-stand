@@ -1,0 +1,47 @@
+body {
+    height: 100%;
+    background-color: lightblue;
+}
+
+nav {
+    height: 100px;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+nav ul li {
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: xx-large;
+    padding: 1px;
+    float: left;
+    font-size: larger;
+}
+
+#salmon {
+    width: 20%;
+    height: 50%;
+    float: left;
+}
+
+table {
+    border-color: red;
+    border: 2px;
+    display: block;
+    border-width: 1px;
+}
+
+form {
+    background-color: pink;
+}
+
+h1 {
+    text-align: center;
+}
