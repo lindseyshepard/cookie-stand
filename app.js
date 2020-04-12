@@ -362,5 +362,5 @@ storeForm.addEventListener('submit', function(e) {
 // totalsCities.removeFinalRow();
 
 
-console.log(formArray);
-totalsCities();
+// console.log(formArray);
+//totalsCities();
